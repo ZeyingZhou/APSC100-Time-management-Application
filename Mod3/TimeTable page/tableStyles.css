@@ -1,0 +1,334 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+
+/* SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR
+(same for all pages) */
+#allNumbers {
+
+    /* centres number buttons */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 3.5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#sidebar{
+      float:left;
+      width: 7%;
+      background-image: linear-gradient(purple,#57005E);
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+    margin: 15px 20% 15px 20%;
+    display: block;
+    max-width:300px;
+    max-height:300px;
+    width: 60%;
+    height: auto;
+}
+
+.parent {
+    /* Contain logo and number buttons */
+    /* formatting is off without this */
+    width: 100%;
+}
+
+.number {
+    /* Subtle grey gradient */
+    background-image: radial-gradient(circle, #D8D8D8, #777777);
+    /* Yellow */
+    /* background: #FBEF6F;*/
+    /* Grey border */
+    border: 1px solid #d3d3d3;
+    /* height and width are equal, dependent on sidebar width. For sidebar of 10%, 5vw. font size is half. */
+    height: 3.5vw;
+    width: 3.5vw;
+    /* line-height must be equal to height to keep text centred */
+    line-height: 3.5vw;
+    margin: 15% auto 15% auto;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.75vw;
+}
+
+.number a {
+    /* number button links */
+    display: block;
+    height: 100%;
+    width: 100%;
+    float: left;
+    color: black;
+    text-decoration: none;
+}
+
+.active {
+    /* for current page number */
+    background-image: radial-gradient(circle, purple, #57005E);
+    /* active height is 6/5 of normal height. normal height is 3.5vw */
+    height: 4.2vw;
+    width: 4.2vw;
+    /* line-height must be equal to height to keep text centred */
+    line-height: 4.2vw;
+}
+
+.active:hover, .continue:hover {
+    background-image: radial-gradient(circle, rgb(68, 1, 73), rgb(153, 0, 153));
+}
+
+.active a {
+    color: #D8D8D8;
+}
+
+.available:hover {
+    background-image: radial-gradient(circle, #777777, #D8D8D8);
+}
+
+.available a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    float: left;
+    color: black;
+    text-decoration: none;
+}
+
+#export a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        float: left;
+        color: black;
+        text-decoration: none;
+}
+#export:hover {
+    color: transparent;
+    background: url("https://static.thenounproject.com/png/96550-200.png");
+    background-image: radial-gradient(circle, #777777, #D8D8D8);
+}
+
+.disabled {
+    cursor: not-allowed;
+    filter: alpha(opacity=80);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    opacity: .80;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+     background: url("../images/clock background - light.png");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+/* End of sidebar */
+
+
+
+
+
+
+
+
+#tableSpace{
+    width: 80%;
+    float: left;
+    height: 100%;
+<<<<<<< HEAD
+    /* overflow: scroll; */
+    overflow-x: hidden;
+=======
+>>>>>>> bb46eebcef3aa20816a6821706e3a0815fa35de6
+}
+
+#numberingBar{
+    width: 7%;
+    float: left;
+    height: 700px;
+}
+
+#eventBar{
+    width: 13%;
+    float: left;
+    height: 100%;
+}
+
+.dayColumn{
+    width: 12.5%;
+    float: left;
+}
+
+.timeSlot{
+    width: 100%;
+    height: 2.4rem;
+    border: 1px solid #d3d3d3;
+}
+
+.time{
+    width: 100%;
+    height: 2.4rem;
+    border: 1px solid #d3d3d3;
+}
+
+#dateScroll{
+    width: 80%;
+    height: 30px;
+    /* background-color: #A8A8A8; */
+    background-image: linear-gradient(#A8A8A8,#C8C8C8);
+    position: fixed;
+    z-index: 5;
+    border: 1px solid #d3d3d3;
+}
+
+#timetable{
+    margin-top: 30px;
+}
+
+#timeColumn{
+    background-color: #A8A8A8;
+}
+/*
+
+style code */
+h1 {
+    width: 100%;
+    height: 80px;
+    /* font-family: Roboto; */
+    /* Replaced with montserrat */
+    background-image: linear-gradient(purple,#57005E);
+    color: white;
+    margin: 0;
+    padding: 10px 20px 15px 20px;
+    /* text-transform: uppercase; */
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+}
+
+button{
+    /* font-family: Roboto; */
+    /* Replaced with montserrat */
+    width: 100%;
+    height: 2.4rem;
+    color: black;
+    position: relative;
+}
+input:focus{
+    background: #fff;
+    border:3px solid purple;
+    outline: none;
+}
+input{
+    width: 100%;
+    height: 46px;
+    box-sizing: border-box;
+    padding: 13px 13px 13px 5px;
+}
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 3;
+}
+
+/* .select{
+    background: purple;
+    color: white;
+} */
+/* This class doesn't show up anywhere */
+
+.list{
+    height: 200px;
+}
+
+/* .exclude{
+    color: grey;
+    text-decoration: line-through;
+} */
+/* This class doesn't show up anywhere */
+
+/*div{
+    width: 100px;
+    height: 40px;
+    box-sizing: border-box;
+}*/
+
+.drop{
+  /*margin: 100px auto;*/
+  background: #fff;
+ /* min-height: 120px;*/
+}
+
+.over {
+  border: solid 5px purple;
+}
+
+.delete {
+ position: absolute;
+ right: 5px;
+ top: 0;
+}
+
+
+/* .lecture{
+    border: solid 1px crimson;
+    background-color: khaki;
+}
+
+span{
+    border: solid 1px red;
+}
+*/
+/* #timeHeading {
+    border: 1px solid #D3D3D3;
+    margin: 0;
+} */
+
+/* PRIMARY: Ready-made drag-and-drop buttons (laundry, study, gym) */
+.add {
+    border-radius: 4px;
+    color: white;
+}
+
+.ready {
+    background-color: #57005E;
+    border: purple;
+    border: 1px solid rgb(71, 0, 75);
+}
+.ready:hover {
+    background-color: rgba(87,0,94,0.8);
+    /* lighter version of same purple colour */
+}
+
+.custom {
+    background-color: #353535;
+    border: 1px solid #151515;
+}
+.custom:hover {
+    background-color: #555555;
+    /* lighter version of same purple colour */
+}
+
+/* Preloaded class blocks (tutorials, labs, lectures) */
+/* No interactivity or responsiveness */
+.lecture {
+    background-color: #FFD800;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    /* line-height: 1.42857143; */
+    line-height: 2.4rem;
+    /* fills cell */
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-image: none;
+    border: 1px solid orange;
+    border-radius: 4px;
+}

@@ -1,0 +1,180 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+#sidebar, #content {
+    height: 100%;
+    overflow:auto;
+    float:left;
+}
+  
+#sidebar {
+    /* background: #57005E; */
+    background-image: linear-gradient(purple,#57005E);
+    width: 7%;
+    display: flex;
+}
+
+#content {
+    background: url("../images/clock background - light.png");
+    /* url for reference - opacity has been modified */
+    /*background: url(http://66.media.tumblr.com/cca1e790be9930466b44867728a561d2/tumblr_mj3r8dQqy61qcdtsho1_1280.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 93%;
+}
+
+.parent {
+    /* Contain logo and number buttons */
+    /* formatting is off without this */
+    width: 100%;
+}
+
+#allNumbers {
+    /* centres number buttons */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 3.5%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#buttons {
+    /* centres section buttons */
+    margin-top: 5.5%;
+    position: absolute;
+    left: 7.5%;
+}
+
+#logo {
+    margin: 15px 20% 15px 20%;
+    display: block;
+    max-width:300px;
+    max-height:300px;
+    width: 60%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #57005E;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+h2 {
+    /* Queen's University Faculty of Engineering */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #57005E;
+    font-weight: 800em;
+    text-shadow: 2px 2px 8px black;
+    margin: 15px;
+}
+
+h3 {
+    /* Choose Your Section */
+    text-align: left;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    color: #57005E;
+    margin: 70px 15px 20px;
+}
+
+.section {
+    /* Formatting for all of the buttons, contained within the class "section" */
+    background-image: radial-gradient(circle, purple, #57005E);
+    border: 2px solid #57005E;
+    height: 60px;
+    line-height: 60px;
+    width: 22%;
+    /* width: 22.099%; */
+    min-width: 155px;
+    margin: 1.33%;
+    /* margin: 15px; */
+    text-align: center;
+    border-radius: 10px;
+    font-size: 0.8em;
+    float: left;
+}
+.section a {
+    /* Formatting for all of the button links, which lead to a "/table" link */
+    display: block;
+    height: 100%;
+    width: 100%;
+    float: left;
+    font-size: 2em;
+    color: #c8c8c8;
+    text-decoration: none;
+    font-weight: bold   
+}
+
+.number {
+    /* Subtle grey gradient */
+    background-image: radial-gradient(circle, #D8D8D8, #777777);
+    /* Yellow */
+    /* background: #FBEF6F;*/
+    /* Grey border */
+    border: 2px solid #A8A8A8;
+    /* height and width are equal, dependent on sidebar width. For sidebar of 10%, 5vw. font size is half. */
+    height: 3.5vw;
+    width: 3.5vw;
+    /* line-height must be equal to height to keep text centred */
+    line-height: 3.5vw;
+    margin: 15% auto 15% auto;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.75vw;
+}
+.number a {
+    /* number button links */
+    display: block;
+    height: 100%;
+    width: 100%;
+    float: left;
+    color: black;
+    text-decoration: none;
+}
+
+.active {
+    /* for current page number */
+    background-image: radial-gradient(circle, purple, #57005E);
+    /* active height is 6/5 of normal height. normal height is 3.5vw */
+    height: 4.2vw;
+    width: 4.2vw;
+    /* line-height must be equal to height to keep text centred */
+    line-height: 4.2vw;
+}
+.active:hover, .continue:hover, .section:hover{
+    background-image: radial-gradient(circle, rgb(68, 1, 73), rgb(153, 0, 153));
+}
+.active a {
+    color: #D8D8D8;
+}
+
+.available:hover {
+    background-image: radial-gradient(circle, #777777, #D8D8D8);
+}
+.available a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    float: left;
+    color: black;
+    text-decoration: none;
+}
+
+.disabled {
+    /* Sidebar buttons that are not available yet (earlier steps to be completed) */
+    cursor: not-allowed;
+    filter: alpha(opacity=80);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    opacity: .80;
+}

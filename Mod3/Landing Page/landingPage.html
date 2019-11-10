@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Queen's Time Management</title>
+        <link rel="stylesheet" type="text/css" href="landingPage.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="shortcut icon" href="../images/QClock.png" type="image/x-icon">
+    </head>
+    <body>
+       <div id="sidebar">
+           <div class="parent">
+                <img width="800" height="800" id="logo" src="../images/QClock.png">
+                <div id="allNumbers">
+                    <div class="number active" title="Current Page"><a href="/">1</a></div>
+                    <div class="number available" title="Next Page - Section Selection"><a href="/sectionSelection">2</a></div>
+                    <div class="number disabled" title="Third Page (complete previous steps)">3</div>
+                        <!-- button 3 will link to <a href="/table">3</a> -->
+                    <div class="number disabled" title="Export (complete previous steps)"><a href="">4</a></div>
+                        <!-- button 4 will link to <a href="/export">4</a> -->
+                        <!-- button no longer links to a page (no export page) -->
+                </div>
+           </div>
+       </div>
+       <div id="content">
+           <h2>Queen's University Faculty of Engineering</h2>
+           <h1>Time Management</h1>
+           <p>
+                <video src="../images/Tutorial Video.mp4" type="video/mp4" controls title="Instruction Video">Instruction Video</video>
+                <!-- Placeholder video -->
+           </p>
+           <div id="buttons">
+                <div class="continue" title="Begin creating your schedule"><a href="/sectionSelection">Begin</a></div>
+                <!-- <div class="continue" title="Import Schedule File"><a href="/table">Import Schedule</a></div> -->
+                <!-- The option to import a schedule is not available -->
+           </div>
+       </div>
+    </body>
+</html>
